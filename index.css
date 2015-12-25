@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+#main{
+    width: 640px;
+    height: 960px;
+    position: absolute;
+    left:50%;
+    top:0;
+    margin-left: -320px;
+    -webkit-transform-origin: top;
+    overflow: hidden;
+}
+.slide li{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+}
+.slide li:nth-child(1){
+    background: url(image/1.jpg) no-repeat;
+}
+.slide li:nth-child(2){
+    background: url(image/2.jpeg) no-repeat;
+}
+.slide li:nth-child(3){
+    background: url(image/3.jpeg) no-repeat;
+}
+.slide li:nth-child(4){
+    background: url(image/4.jpeg) no-repeat;
+}
+.zIndex{
+    z-index: 111;
+}
+.a1{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 15%;
+    margin-top:30%;
+    color: #000;
+    font-weight: bold;
+    line-height: 26px;
+    font-size: 44px;
+}
+.a1 span{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+}
+.a1 span:nth-child(odd){
+    -webkit-transform: translate(-500px,0);
+}
+.a1 span:nth-child(even){
+    -webkit-transform: translate(500px,0);
+}
+#a1 span{
+    -webkit-transform: translate(0, 0);
+    -webkit-transition: 1s;
+}
+.a2{
+    position: absolute;
+    width: 700px;
+    height: 90px;
+    left:50%;
+    top:50%;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: -27px;
+    margin-left: -160px;
+    -webkit-transform: rotate(-15deg);
+}
+#a2 p{
+    -webkit-transform: rotate(360deg);
+    -webkit-transition:all 2s;
+}
+.a3{
+    width: 600px;
+    height: 220px;
+    position: absolute;
+    left:50%;
+    margin-left: -300px;
+    bottom:40%;
+    font-size: 40px;
+}
+.a3 p:nth-of-type(1){
+    color: #F9AF2A;
+    font-size: xx-large;
+}
+.a3 p:nth-of-type(2){
+    color: #7c2a99;
+    font-size: smaller;
+    font-weight: bold;
+}
+.a3 p:nth-of-type(3){
+    color: #0fb200;
+    font-weight: lighter;
+}
+#a3{
+    -webkit-transform: rotateY(720deg);
+    -webkit-transition:2s;
+}
+.a4 p{
+    box-shadow: 3px 3px 10px 0 #113355;
+    color: black;
+    line-height: 50px;
+    border-radius: 5px;
+    width: 600px;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 5px;
+    height:550px;
+    font-size: 32px;
+    position: absolute;
+    overflow: hidden;
+    font-family: "\5FAE\8F6F\96C5\9ED1", Helvetica, sans-serif;
+}
+
+#a4 p{
+    width: 600px;
+    height: 550px;
+    -webkit-transform: scale(.88);
+    -webkit-transition: 3s;
+}
