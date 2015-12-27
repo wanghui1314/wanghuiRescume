@@ -9,7 +9,7 @@ if(desW/desH<winW/winH){
 }else{
     main.style.webkitTransform = 'scale('+winH/desH+')';
 }
-main.style.webkitTransform = "scale(" + winH / desH + ")";
+main.style.webkitTransform = "scale(" + winH/desH + ")";
 [].forEach.call(oLis, function () {
     arguments[0].index = arguments[1];
     arguments[0].addEventListener('touchstart', start, false);//在冒泡阶段触发
